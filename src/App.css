@@ -1,0 +1,248 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*game css */
+body{
+ background-image:linear-gradient(90deg,rgb(0, 0, 0),rgb(15, 15, 15),rgb(38, 38, 38));
+}
+.header{
+  width:100%;
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top:10px;
+  /* line-height:0.1rem; */
+  color:white;
+}
+.header h1{
+  font-size:2rem;
+  letter-spacing:0.2rem;
+  word-spacing:1rem;
+}
+.header p{
+  font-size:1.2rem;
+  letter-spacing:0.3rem;
+}
+
+.border_outer{
+  margin:auto;
+  margin-top:2rem;
+  width:30rem;
+  height:25rem;
+  /* border:3px solid white; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.border{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+}
+
+.border1{
+  width:33.33%;
+  height:33.33%;
+  border-right:3px solid white;
+  border-bottom:3px solid white;
+  box-sizing: border-box;
+
+}
+.border2{
+  width:33.33%;
+  height:33.33%;
+  border-right:3px solid white;
+  border-bottom:3px solid white;
+  border-left:3px solid white;
+  box-sizing: border-box;
+}
+.border3{
+  width:33.33%;
+  height:33.33%;
+  border-bottom:3px solid white;
+  border-left:3px solid white;
+  box-sizing: border-box;
+}
+.border4{
+  width:33.33%;
+  height:33.33%;
+  border-top:3px solid white;
+  border-right:3px solid white;
+  border-bottom:3px solid white;
+  box-sizing: border-box;
+}
+.border5{
+  width:33.33%;
+  height:33.33%;
+  border-top:3px solid white;
+  border-right:3px solid white;
+  border-bottom:3px solid white;
+  border-left:3px solid white;
+  box-sizing: border-box;
+}
+.border6{
+  width:33.33%;
+  height:33.33%;
+  border-top:3px solid white;
+  border-bottom:3px solid white;
+  border-left:3px solid white;
+  box-sizing: border-box;
+}
+.border7{
+  width:33.33%;
+  height:33.33%;
+  border-top:3px solid white;
+  border-right:3px solid white;
+  box-sizing: border-box;
+}
+
+.border8{
+  width:33.33%;
+  height:33.33%;
+  border-top:3px solid white;
+  border-right:3px solid white;
+  border-left:3px solid white;
+  box-sizing: border-box;
+}
+
+.border9{
+  width:33.33%;
+  height:33.33%;
+  border-top:3px solid white;
+  border-left:3px solid white;
+  box-sizing: border-box;
+}
+
+.choice1{
+  color:rgb(255, 234, 0);
+  font-size:4rem;
+  transform: scale(0.5);
+  animation: popUp 0.3s ease forwards;
+}
+.choice2{
+  color:rgb(0, 255, 51);
+  font-size:4rem;
+  transform: scale(0.5);
+  animation: popUp 0.3s ease forwards;
+}
+
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.player_info{
+  padding-top:2rem;
+  color:white;
+  width:70%;
+  margin: auto;
+  max-width:500px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+ flex-wrap: wrap;
+
+}
+.player_info div{
+  display:flex;
+  letter-spacing:0.2rem;
+  flex-direction: column;
+  line-height:0.1rem;
+  font-size:1.1rem;
+  justify-content: center;
+  align-items: center;
+  font-size:1.1rem;
+}
+.player2_win {
+  animation: blink 0.5s linear infinite;
+  color:rgb(0, 255, 51);
+ 
+}
+.player1_win {
+  animation: blink 0.5s linear infinite;
+  color:rgb(255, 234, 0);
+}
+.tie{
+  animation: blink 0.5s linear infinite;
+  color:rgb(255, 111, 0);
+  color:rgb(255, 119, 0);
+}
+.footer_text{
+  color:rgb(0, 255, 17);
+  letter-spacing:1rem;
+  text-align: center;
+  margin-top:2rem;
+  
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width:800px) {
+  .border_outer{
+    width:70%;
+    height:20rem;
+  }
+}
+@media (max-width:500px) {
+  .border_outer{
+    width:70%;
+    height:17rem;
+  }
+}
+
