@@ -17,8 +17,9 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                bat 'docker compose down'
-                bat 'docker compose up -d'
+                bat 'docker compose down || exit /b 0'
+                bat 'docker rm -f tic-tac-toe-container || exit /b 0'
+                bat 'docker compose up -d --build'
             }
         }
 
