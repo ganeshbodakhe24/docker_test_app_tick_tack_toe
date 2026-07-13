@@ -84,7 +84,7 @@ function Player_info() {
                 </div>
             </div>
             <div className="footer_text">
-            <p>Developer : Ganesh Bodakhe</p>
+            <p>Developer : Mr Ganesh Bodakhe</p>
             </div>
         </>
     )
